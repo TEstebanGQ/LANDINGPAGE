@@ -1,0 +1,65 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1f1f1f;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* ====== Sección Projects ====== */
+.projects {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Título principal */
+.projects h1 {
+  font-weight: 800;
+  font-size: clamp(2.3rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 2.5rem;
+}
+
+/* Contenedor de proyectos */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 2rem;
+}
+
+/* Cada proyecto */
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.project .number {
+  font-weight: 700;
+  color: #7a7a7a;
+  font-size: 1.1rem;
+}
+
+.project p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.project img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* ====== Responsivo ====== */
+@media (max-width: 960px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* en móvil: apilados */
+  }
+}
