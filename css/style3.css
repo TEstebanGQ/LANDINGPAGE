@@ -1,81 +1,32 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  color: #222;
-  background: #fff;
-  line-height: 1.6;
-}
-
-/* ---- Sección de texto ---- */
-.simple {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* título a la izq, texto a la der */
-  align-items: start;
-  padding: 3rem 2rem;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.text-left h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 700;
-}
-
-.text-right p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.6rem 1.3rem;
-  background: #222;
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #444;
-}
-
-/* ---- Imagen más pequeña ---- */
-.simple-image {
-  text-align: center; /* centramos la imagen */
-  margin-top: 0rem;
-}
-
-.simple-image img {
-  width: 70%;        /* 👈 más pequeña que el ancho total */
-  max-width: 1200px;  /* no más de 700px */
-  height: auto;
-  border-radius: 12px;
+/* ---- Imágenes hero ---- */
+.hero-images img {
+  width: 100%;
+  border-radius: 16px;                 /* esquinas más redondeadas */
   object-fit: cover;
+  transition: transform 0.4s ease, 
+              box-shadow 0.4s ease, 
+              filter 0.4s ease;
 }
 
-/* ---- Responsivo ---- */
-@media (max-width: 800px) {
-  .simple {
-    grid-template-columns: 1fr; /* en móvil apilado */
-    text-align: center;
-  }
+.hero-images img:hover {
+  transform: scale(1.07) rotate(-1deg); /* zoom + ligera rotación */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  filter: brightness(1.05) saturate(1.2); /* más color y brillo */
+}
 
-  .text-left,
-  .text-right {
-    margin: auto;
-  }
+/* ---- Gallery inferior ---- */
+.gallery-item img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  height: 220px;
+  transition: transform 0.4s ease, 
+              box-shadow 0.4s ease, 
+              filter 0.4s ease;
+}
 
-  .simple-image img {
-    width: 90%; /* en móviles que no quede tan pequeña */
-  }
+.gallery-item img:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  filter: brightness(1.1) contrast(1.05);
 }
