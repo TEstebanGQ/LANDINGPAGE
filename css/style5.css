@@ -1,65 +1,69 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
+/* Estilos generales */
 body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  color: #1f1f1f;
-  background: #fff;
-  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-/* ====== Sección Projects ====== */
 .projects {
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* Título principal */
 .projects h1 {
-  font-weight: 800;
-  font-size: clamp(2.3rem, 5vw, 3rem);
-  line-height: 1.15;
-  margin-bottom: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 0;       /* 👈 elimina el espacio en blanco de arriba */
+  margin-bottom: 0.8rem; /* ajusta separación con lo de abajo */
 }
 
-/* Contenedor de proyectos */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 2rem;
-}
 
-/* Cada proyecto */
-.project {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-}
-
-.project .number {
-  font-weight: 700;
-  color: #7a7a7a;
-  font-size: 1.1rem;
-}
-
-.project p {
-  color: #444;
-  font-size: 0.95rem;
+.card h2 {
+  font-size: 1.5rem;   /* más grande */
+  font-weight: bold;   /* negrilla */
   margin-bottom: 0.5rem;
 }
 
-.project img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
 }
 
-/* ====== Responsivo ====== */
-@media (max-width: 960px) {
-  .project-grid {
-    grid-template-columns: 1fr; /* en móvil: apilados */
+
+
+.card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.img-container {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover: agranda imagen */
+.card img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .projects h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
