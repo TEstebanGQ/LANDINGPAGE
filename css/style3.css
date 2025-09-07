@@ -52,7 +52,7 @@ body {
 /* ---- Imagen más pequeña ---- */
 .simple-image {
   text-align: center; /* centramos la imagen */
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 .simple-image img {
