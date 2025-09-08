@@ -15,7 +15,7 @@ body {
 /* ---- Hero ---- */
 .hero {
   text-align: center;
-  padding: 2rem 1rem 1rem; /* menos espacio abajo */
+  padding: 2rem 1rem 1rem; 
   max-width: 800px;
   margin: auto;
 }
@@ -64,7 +64,7 @@ body {
 
 .grid img {
   width: 100%;
-  aspect-ratio: 1 / 1; /* cuadrado perfecto */
+  aspect-ratio: 1 / 1; 
   border-radius: 10px;
   object-fit: cover;
   display: block;
@@ -87,7 +87,7 @@ body {
   }
 
   .grid {
-    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    grid-template-columns: 1fr 1fr; /
   }
 }
 
@@ -106,6 +106,6 @@ body {
   }
 
   .grid {
-    grid-template-columns: 1fr; /* 1 columna en móviles */
+    grid-template-columns: 1fr; 
   }
 }

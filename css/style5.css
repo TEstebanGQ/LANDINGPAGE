@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -15,14 +15,14 @@ body {
 .projects h1 {
   font-size: 3.5rem;
   font-weight: bold;
-  margin-top: 0;       /* 👈 elimina el espacio en blanco de arriba */
-  margin-bottom: 0.8rem; /* ajusta separación con lo de abajo */
+  margin-top: 0;       
+  margin-bottom: 0.8rem; 
 }
 
 
 .card h2 {
-  font-size: 1.5rem;   /* más grande */
-  font-weight: bold;   /* negrilla */
+  font-size: 1.5rem;   
+  font-weight: bold;  
   margin-bottom: 0.5rem;
 }
 
@@ -54,7 +54,7 @@ body {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Hover: agranda imagen */
+
 .card img:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);

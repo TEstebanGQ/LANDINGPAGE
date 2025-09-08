@@ -1,4 +1,4 @@
-/* Reset */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -21,7 +21,7 @@ body {
 
 /* Logo encima del título */
 .logo-main {
-  width: 100px;       /* muchísimo más grande */
+  width: 100px;       
   display: block;
   margin-bottom: 2rem;
 }
@@ -86,7 +86,7 @@ body {
   color: #333;
 }
 
-/* Imagen reloj */
+/* Imagen  */
 .hero-image {
   text-align: center;
 }
@@ -96,8 +96,8 @@ body {
 }
 .watch {
   width: 100%;
-  max-width: 750px;  /* mucho más ancha */
-  height: 800px;     /* mucho más larga */
+  max-width: 750px; 
+  height: 800px;     
   object-fit: cover;
   border-radius: 16px;
   display: block;

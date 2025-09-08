@@ -46,7 +46,7 @@ body {
   .small-images {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap; /* 🔥 así no se desbordan en pantallas pequeñas */
+    flex-wrap: wrap; 
   }
   
   .small-images img {
@@ -117,7 +117,7 @@ body {
     .left, 
     .center, 
     .right {
-      text-align: center; /* Centrado en móvil */
+      text-align: center; 
     }
   
     .small-images {
