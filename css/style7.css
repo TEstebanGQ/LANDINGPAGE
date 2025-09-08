@@ -13,16 +13,17 @@ body {
 .design-section {
   max-width: 1400px;
   margin: auto;
-  text-align: center;
 }
 
+/* Título a la izquierda */
 .design-section h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: bold;
   margin-bottom: 3rem;
+  text-align: left;   /* alineado a la izquierda */
 }
 
-/* Grid */
+/* Grid de 4 columnas */
 .design-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -48,7 +49,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Image box */
+/* Imagen más larga */
 .image-box {
   position: relative;
   overflow: hidden;
@@ -57,13 +58,13 @@ body {
 
 .image-box img {
   width: 100%;
-  height: 260px;
+  height: 480px;         /* 📌 mucho más largo */
   object-fit: cover;
-  display: block;
   border-radius: 12px;
+  display: block;
 }
 
-/* Overlay text on image */
+/* Overlay */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -71,17 +72,16 @@ body {
   right: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
   color: #fff;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 0 0 12px 12px;
 }
 
 .overlay h3 {
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
 }
-
 .overlay p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.4;
 }
 
@@ -96,6 +96,6 @@ body {
     grid-template-columns: 1fr;
   }
   .image-box img {
-    height: 220px;
+    height: 300px; /* ajusta en móvil */
   }
 }
