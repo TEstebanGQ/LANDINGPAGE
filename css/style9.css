@@ -1,0 +1,159 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #e9ecef;
+  color: #222;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 5%;
+  gap: 3rem;
+}
+
+/* Texto */
+
+.hero-text {
+  grid-column: 1 / -1;  /* ocupa todas las columnas del grid */
+  text-align:initial;   /* centra el contenido dentro del bloque */
+  margin: 0 auto;       /* lo centra en la página */
+  max-width: 800px;     /* opcional: controla el ancho máximo */
+}
+
+.hero-text h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+/* Imagen de arriba */
+.hero-image-top {
+  position: relative;
+  width: 90%;          /* ocupa casi todo el ancho */
+  margin: 0 auto;      /* centrada con márgenes */
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.hero-image-top img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Parte inferior */
+/* Parte inferior */
+.hero-bottom {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+/* Imagen de abajo */
+.hero-bottom img {
+  width: 90%;             /* ocupa casi todo el ancho */
+  height: auto;
+  max-height: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Caja de stats */
+.stats-box {
+  position: relative;             
+  margin: -5% 5% 0 5%;      /* sube 5% y deja 5% de margen a izquierda y derecha */
+  width: auto;              /* se adapta entre los márgenes */
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2.5rem 3rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+}
+
+
+/* Stats individuales */
+.stat {
+  flex: 1;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin: auto;
+    text-align: center;
+  }
+
+  .hero-image-top,
+  .hero-bottom img {
+    width: 100%;
+  }
+
+  .hero-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-box {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
