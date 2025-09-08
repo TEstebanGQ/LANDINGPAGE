@@ -58,7 +58,7 @@ body {
 
 .image-box img {
   width: 100%;
-  height: 480px;         /* 📌 mucho más largo */
+  height: 480px;         /*mucho más largo */
   object-fit: cover;
   border-radius: 12px;
   display: block;
