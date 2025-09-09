@@ -1,0 +1,99 @@
+/* Fondo hero */
+.nature-hero {
+  background: url("../images/pag1/img66.png") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px;
+}
+
+/* Redes sociales */
+.social-icons {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #50e3c2;
+}
+
+/* Texto central */
+.hero-content {
+  max-width: 600px;
+  margin-left: auto;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.hero-content button {
+  background: #fff;
+  color: #222;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-content button:hover {
+  background: #eee;
+}
+
+/* Textos inferiores */
+.bottom-texts {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.bottom-texts p {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .bottom-texts {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .social-icons {
+    top: auto;
+    bottom: 20px;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
